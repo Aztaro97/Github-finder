@@ -17,7 +17,7 @@ app.use('/', (req,res, next)=> {
     res.render('index')
 })
 
-let PORT = process.env.PORT_URL
+let PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
     console.log("Listenning on port 3000")
 });

@@ -11,7 +11,6 @@ let list_repo = document.querySelector('#list_repo')
 async function FetchApi(user) {
     let api_call = await fetch(`https://api.github.com/users/${user}?client_id=${client_id}&client_secret=${client_secret}`);
     let Data = await api_call.json()
-    console.log(api_call)
     return {Data}
 }
 
